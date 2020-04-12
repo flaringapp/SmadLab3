@@ -17,13 +17,13 @@ class ConfidenceIntervalsCalculatorImpl(
         vararg numbers: Double
     ): Single<IConfidenceInterval> = rxCalculation {
         val average = calculator.averageEmpirical(*numbers).blockingGet()
-        val variance = calculator.variance(*numbers).blockingGet()
+        val s = calculator.meanSquareDeviation(*numbers).blockingGet()
         val count = numbers.size
 
         val t = significanceLevel.laplace
 
-        val left = average - (variance / sqrt(count.toDouble()) * t)
-        val right = average + (variance / sqrt(count.toDouble()) * t)
+        val left = average - (s / sqrt(count.toDouble()) * t)
+        val right = average + (s / sqrt(count.toDouble()) * t)
 
         ConfidenceInterval(left, right)
     }
