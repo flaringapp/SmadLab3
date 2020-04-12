@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SmadLab3</string>
+    <string name="enter_numbers">Enter numbers of your set here</string>
+    <string name="enter_significance_level">Enter significance level</string>
+    <string name="input_too_short">Input too short</string>
+    <string name="button1">Confidence interval for mathematical expectation (variance known)</string>
+    <string name="button2">Confidence interval for mathematical expectation (variance unknown)</string>
+    <string name="button3">Сonfidence interval for mean squared deviation</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_invalid_dot">Input can\'t containt single dot \".\" symbol</string>
+    <string name="input_invalid_only_decimal">Use only decimal symbols please</string>
+    <string name="significanceInterval1">0.05</string>
+    <string name="significanceInterval2">0.01</string>
+</resources>
