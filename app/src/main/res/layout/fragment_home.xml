@@ -63,7 +63,8 @@
                 android:padding="8dp"
                 android:text="@string/significanceInterval1"
                 android:textColor="@color/black"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:checked="true"/>
 
             <RadioButton
                 android:id="@+id/buttonSignificanceInterval2"
